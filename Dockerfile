@@ -44,6 +44,7 @@ ENV colo="SJC,LAX,HKG" \
     delay="300" \
     ipnum="10" \
     ips="4" \
+    addr="0.0.0.0:1234" \
     num="10" \
     port="443" \
     random="true" \
