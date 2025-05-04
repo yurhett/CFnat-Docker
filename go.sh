@@ -10,6 +10,7 @@ colo_upper=$(echo "$colo" | tr '[:lower:]' '[:upper:]')
 echo "系统架构: $ARCH"
 echo "使用二进制文件: $CFNAT_BINARY"
 echo "IP类型(ips): $ips"
+echo "监听地址(addr): $addr"
 echo "TLS: $tls"
 echo "随机IP(random): $random"
 echo "数据中心(colo): $colo_upper"
@@ -33,7 +34,7 @@ do
         -port="$port" \
         -delay="$delay" \
         -ips="$ips" \
-        -addr="0.0.0.0:1234" \
+        -addr="$addr" \
         -ipnum="$ipnum" \
         -num="$num" \
         -random="$random" \
