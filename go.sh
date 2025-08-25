@@ -41,7 +41,7 @@ do
         -task="$task" \
         -tls="$tls" \
         -code="$code" \
-        -domain="$domain"
+        -domain="$domain" >> cfnat.log 2>&1
 
     # 检查执行是否成功
     if [ $? -ne 0 ]; then
